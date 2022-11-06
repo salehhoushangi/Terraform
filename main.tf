@@ -26,7 +26,7 @@ resource "aws_instance" "my_instance" {
 resource "aws_security_group" "instance" {
     name = "terraform-example-instance"
 
-    ingress =  {
+    ingress {
       cidr_blocks = [ "0.0.0.0/0" ]
       from_port = 8080
       protocol = "tcp"
